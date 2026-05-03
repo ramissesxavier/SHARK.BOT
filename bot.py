@@ -86,7 +86,7 @@ async def on_raw_reaction_remove(payload):
 async def on_member_join(member):
     canal = bot.get_channel(CANAL_BOAS_VINDAS)
     if canal:
-        embed = discord.Embed(title='🌟 Bem-vindo(a)!', description=f'Olá {member.mention}, espero que você se divirta no nosso servidor!', color=0xc91f1f)
+        embed = discord.Embed(title='Bem-vindo(a)!', description=f'Olá {member.mention}, espero que você se divirta no nosso servidor!', color=0xc91f1f)
         embed.set_thumbnail(url=member.display_avatar.url)
         embed.set_image(url=GIF_BOAS_VINDAS)
         embed.set_footer(text=f'ID do usuário: {member.id}')
